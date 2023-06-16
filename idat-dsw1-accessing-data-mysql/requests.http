@@ -1,0 +1,12 @@
+# Listar todos los usuarios
+GET http://localhost:8080/demo/all
+
+###
+
+# Crear un usuario
+
+POST http://localhost:8080/demo/add
+Content-Type: application/x-www-form-urlencoded
+
+name=Juan
+&email=juan@correo.com
