@@ -1,0 +1,40 @@
+# Listar todos los usuarios
+GET http://localhost:8080/demo/all
+
+###
+
+# Crear un usuario
+
+POST http://localhost:8080/demo/add
+Content-Type: application/x-www-form-urlencoded
+
+name=Juan
+&email=juan@correo.com
+
+###
+# Editar usuario
+
+PUT http://localhost:8080/demo/edit
+Content-Type: application/x-www-form-urlencoded
+
+id=1
+&name=Pedro
+&email=pedro@correo.com
+
+###
+
+# Ver usuario por ID
+GET http://localhost:8080/demo/ver/1
+
+###
+
+# Borrar usuario por ID
+DELETE http://localhost:8080/demo/del
+Content-Type: application/x-www-form-urlencoded
+
+id=1
+
+###
+
+# Ver resultado de una query SQL
+GET http://localhost:8080/demo/get/report
